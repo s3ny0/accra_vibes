@@ -1,1 +1,42 @@
 
+
+/*general styling for homepage*/
+body{
+  margin: 0px;
+}
+
+.hero{
+  width: 95%;
+  margin: 0px auto;
+}
+
+.huge-text{
+  margin: 0px;
+  font-size: 15rem;
+  text-align: center;
+  color: rgb(227, 207, 157);
+}
+
+.nav{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+}
+
+.nav-button{
+  height: 50px;
+  width: 200px;
+  margin: 0px 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+.hero-img{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+}
