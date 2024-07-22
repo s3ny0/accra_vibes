@@ -1,20 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Flaticon CDN-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!--Stylesheet-->
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Accra Vibes</title>
-  </head>
-  <body>
-    <div class="hero">
-      <h1 class="huge-text">ACCRA VIBES</h1>
-      <div class="nav">
-        <button class="nav-button">RADIO</button>
-        <button class="nav-button">MENU</button>
-      </div>
-      <div class="hero-img"></div>
+    <title>ACCRA VIBES</title>
+</head>
+<body>
+
+    
+    <!--Drop down menu-->
+    <div id="menu">
+        <button class="close-button" id="cancel"><i class="fi fi-rs-cross"></i></button>
+        <button class="navigation">Home</button>
+        <a href="explore.html"><button class="navigation">Explore</button></a>
+        <button class="navigation">About</button>
+        <button class="navigation">Contact</button>
     </div>
-  </body>
+
+    <!--Jquery for drop down menu-->
+    <script>
+        $(document).ready(function() {
+            $("#nav-button").click(
+                function () {
+                    $("#menu").slideDown(1000); // or toggle() if you prefer
+                }
+            );
+
+            $("#cancel").click(
+                function () {
+                    $("#menu").slideUp(1000); // or toggle() if you prefer
+                }
+            );
+        });
+    </script>
+
+<nav>
+    <h1 class="logo">ACCRA VIBES</h1>
+    <button class="nav-right" id="nav-button">MENU</button>
+</nav>
+<div class="hero">
+    <h1 class="huge-text">DISCOVER</h1>
+    <h2 class="semi-huge-text">The Heartbeat of Accra</h2>
+    <div class="hero-img"></div>
+    <div class="hero-text">
+            <p class="subtitle">"Akwaaba!" Welcome to Accra, the pulsating heart of Ghana! Dive into a whirlwind of vibrant experiences as you explore this dynamic city like never before. Savor the tantalizing flavors of its rich culinary scene, lose yourself in the rhythm of its music and dance, and connect with the spirited people who bring this city to life. Embark on an unforgettable journey and discover Accra with an intimacy and depth that will leave you breathless!</p>
+        </div>
+    </div>
+
+    <div class="explore">
+        <div class="explore-row row-1">
+            <h1 class="explore-huge-text">FOOD & CUISINE</h1> <img class="explore-img" src="Images/placeholder.png">
+        </div>
+        <div class="explore-row row-2">
+            <img class="explore-img" src="Images/placeholder.png"> <h1 class="explore-huge-text">LIFESTYLE</h1>
+        </div>
+        <div class="explore-row row-3">
+            <h1 class="explore-huge-text">ART & CULTURE</h1> <img class="explore-img" src="Images/placeholder.png">
+        </div>
+        <div class="explore-row row-4">
+            <img class="explore-img" src="Images/placeholder.png"> <h1 class="explore-huge-text">TOP DESTINATIONS</h1> 
+        </div>
+    </div>
+
+    <div class="history">
+        <div class="history-text">
+            <h1 class="heading">A BRIEF HISTORY ABOUT ACCRA</h1>
+            <p class="subtitle">
+                Accra, the capital city of Ghana, is a city with a rich 
+                and dynamic history. Its origins date back to the 15th 
+                century when it was initially inhabited by the Ga people. 
+                The name "Accra" is derived from the Akan word "Nkran," 
+                meaning "ants," which reflects the area's numerous anthills. 
+                During the late 15th and early 16th centuries, European traders 
+                arrived, attracted by the lucrative gold and slave trade. 
+                The Portuguese, Dutch, and British established forts along 
+                the coast, including James Fort, Ussher Fort, and Christiansborg 
+                Castle, which became key trading posts. Post-independence, Accra 
+                became the capital of the newly independent Ghana in 1957. Since 
+                then, it has evolved into a bustling metropolis, serving as the 
+                political, economic, and cultural heart of the nation. Today, 
+                Accra is known for its vibrant markets, historical landmarks, 
+                diverse culture, and rapid urban development.
+            </p>
+        </div>
+        <div class="history-images">
+            <img class="history-img" src="Images/placeholder.png" alt="" data-aos="flip-left" data-aos-duration="1000">
+            <img class="history-img" src="Images/placeholder.png" alt="" data-aos="flip-left" data-aos-duration="2000">
+            <img class="history-img" src="Images/placeholder.png" alt="" data-aos="flip-left" data-aos-duration="2300">
+            <img class="history-img" src="Images/placeholder.png" alt="" data-aos="flip-left" data-aos-duration="2300">
+        </div>
+    </div>
+
+   <div class="views">
+        <h1 class="views-heading">GALLERY</h1>
+        <p class="views-paragraph">ACCRA AS SEEN THROUGH LENS</p>
+        <div class="gallery">
+            <img src="Images/placeholder.png" alt="">
+            <img src="Images/placeholder.png" alt="">
+            <img src="Images/placeholder.png" alt="">
+            <img src="Images/placeholder.png" alt="">
+            <img src="Images/placeholder.png" alt="">
+            <img src="Images/placeholder.png" alt="">
+        </div>
+    </div>
+
+    <div class="destination-map">
+        <h1 class="heading">TOP DESTINATIONS</h1>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TTNLcLi59_zETh626_qP_9jJ_M2Rg9w&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
+   </div>
+
+   <footer data-aos="fade-up" data-aos-duration="1500">
+    <div class="footer-cluster">
+        <p data-aos="fade-up" data-aos-duration="2000">Instagram</p>
+        <p data-aos="fade-up" data-aos-duration="2500">Pinterest</p>
+        <p data-aos="fade-up" data-aos-duration="3000">Twitter</p>
+        <p data-aos="fade-up" data-aos-duration="3500">Facebook</p>
+    </div>
+    <h1 class="bold-text" data-aos="fade-up" data-aos-duration="1500">ACCRA VIBES</h1>
+    <p class="rights">Copyright 2024 Senyosco's Inc</p>
+</footer>
+    
+</body>
 </html>
