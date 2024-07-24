@@ -1,14 +1,14 @@
 
 /*Scrollbar styling*/
-body::-webkit-scrollbar {width: 15px; cursor: url("Images/hand-cursor.png"), auto;}
+body::-webkit-scrollbar {width: 15px; cursor: url("hand-cursor.png"), auto;}
 body::-webkit-scrollbar-track {background: none;}
 body::-webkit-scrollbar-thumb {background: rgb(40, 40, 40); border-radius: 15px; border: none;}
 body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 
 /*Fonts*/
-@font-face {font-family: "20db"; src: url("Fonts/20-db/20db.otf");}
-@font-face {font-family: "Exo-light"; src: url("Fonts/exo/Exo-Light.otf");}
-@font-face {font-family: "Exo-extra-bold"; src: url("Fonts/exo/Exo-ExtraBold.otf");}
+@font-face {font-family: "20db"; src: url("20db.otf");}
+@font-face {font-family: "Exo-light"; src: url("Exo-Light.otf");}
+@font-face {font-family: "Exo-extra-bold"; src: url("Exo-ExtraBold.otf");}
 
 
 @media screen and (max-width: 414px) {
@@ -998,7 +998,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 body{
     max-width: 1400px;
     margin: 0px;
-    cursor: url("Images/cursor.png"), auto;
+    cursor: url("cursor.png"), auto;
     font-family: 'Exo-light';
     background-color: rgb(255, 197, 8);
 }
@@ -1016,7 +1016,7 @@ nav{
     background-color: transparent;
     border: none;
     border-radius: 10px;
-    cursor: url("Images/hand-cursor.png"), auto;
+    cursor: url("hand-cursor.png"), auto;
     font-family: "20db";
     color: rgb(40, 40, 40);
 }
@@ -1041,7 +1041,7 @@ nav{
     border: none;
     background-color: transparent;
     color: white;
-    cursor: url("Images/hand-cursor.png"), auto;
+    cursor: url("hand-cursor.png"), auto;
     position: absolute;
     top: 30px;
     left: 85%;
@@ -1056,7 +1056,7 @@ nav{
     font-family: "20db";
 }
 .navigation:hover{
-    cursor: url("Images/right-arrow.png"), auto;
+    cursor: url("right-arrow.png"), auto;
     color: white;
 }
 
@@ -1072,7 +1072,7 @@ nav{
 
 .hero-img{
     width: 100%;
-    background-image: url("Images/placeholder.png");
+    background-image: url("placeholder.png");
     background-attachment: local;
     background-size: cover;
     background-position: center;
@@ -1109,7 +1109,7 @@ nav{
 }
 
 .explore-img:hover{
-    cursor: url("Images/right-arrow.png"), auto;
+    cursor: url("right-arrow.png"), auto;
     transform: scale(1.1);
     transition: 0.7s;
 }
