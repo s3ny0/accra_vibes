@@ -43,16 +43,16 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         width: 95%;
         margin: 100px auto;
         overflow: hidden;
-        font-size: 3rem;
-        transform: scaleY(6); /* Stretch vertically by 2 times */
+        font-size: 2.7rem;
+        transform: scaleY(5); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
     .semi-huge-text{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .hero-img{
-        height: 400px;
+        height: 500px;
     }
     .subtitle{
         font-size: 1.2rem;
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 150px auto;
     }
     .history .heading{
-        font-size: 3rem;
+        font-size: 2.3rem;
         transform: scaleY(2);
         margin: 100px 0px;
     }
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 0px auto;
     }
     iframe{
-        height: 300px;
+        height: 500px;
     }
 
     footer{    
@@ -173,8 +173,8 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         width: 95%;
         margin: 150px auto;
         overflow: hidden;
-        font-size: 3.5rem;
-        transform: scaleY(6); /* Stretch vertically by 2 times */
+        font-size: 3rem;
+        transform: scaleY(5); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
     .semi-huge-text{
@@ -217,7 +217,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .history .heading{
         margin: 100px 0px;
-        font-size: 3rem;
+        font-size: 2.5rem;
         transform: scaleY(2);
     }
     .history-expandable{
@@ -261,7 +261,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 0px auto;
     }
     iframe{
-        height: 300px;
+        height: 500px;
     }
 
     footer{    
@@ -760,7 +760,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 
 @media screen and (min-width: 1010px) and (max-width: 1249px) {
     .huge-text{
-        font-size: 9rem;
+        font-size: 8rem;
         margin: 250px auto;
         letter-spacing: -5px;
         transform: scaleY(3.5); /* Stretch vertically by 2 times */
