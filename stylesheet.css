@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         width: 95%;
         margin: 100px auto;
         overflow: hidden;
-        font-size: 3.2rem;
+        font-size: 3rem;
         transform: scaleY(6); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
@@ -760,10 +760,10 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 
 @media screen and (min-width: 1010px) and (max-width: 1249px) {
     .huge-text{
-        font-size: 10rem;
+        font-size: 9rem;
         margin: 250px auto;
         letter-spacing: -5px;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
+        transform: scaleY(3.5); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
 
@@ -852,9 +852,9 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     .huge-text{
         margin: 270px auto;
         letter-spacing: 5px;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
+        transform: scaleY(3.5); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
-        font-size: 12rem;
+        font-size: 9.5rem;
     }
     .semi-huge-text{
         font-size: 6rem;
