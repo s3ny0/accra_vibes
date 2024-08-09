@@ -1,6 +1,6 @@
 
 /*Scrollbar styling*/
-body::-webkit-scrollbar {width: 15px; cursor: url("hand-cursor.png"), auto;}
+body::-webkit-scrollbar {width: 15px; cursor: url("Images/hand-cursor.png"), auto;}
 body::-webkit-scrollbar-track {background: none;}
 body::-webkit-scrollbar-thumb {background: rgb(40, 40, 40); border-radius: 15px; border: none;}
 body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
@@ -9,21 +9,23 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 @font-face {font-family: "20db"; src: url("20db.otf");}
 @font-face {font-family: "Exo-light"; src: url("Exo-Light.otf");}
 @font-face {font-family: "Exo-extra-bold"; src: url("Exo-ExtraBold.otf");}
+@font-face {font-family: "Molot"; src: url("Molot.otf");}
+@font-face {font-family: "Peace Sans"; src: url("peace_sans.otf");}
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 400px) {
     nav{
         height: 50px;
     }
     .logo{
         margin: 0px 20px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .nav-right{
         height: 40px;
         width: 100px;
         margin: 0px 20px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #menu{
@@ -38,26 +40,27 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     
     .hero{
         margin: 50px auto;
+        width: 95%;
     }
     .huge-text{
         width: 95%;
-        margin: 100px auto;
+        margin: 130px auto 100px;
         overflow: hidden;
-        font-size: 2.7rem;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
+        font-size: 4.2rem;
+        transform: scaleY(6); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
     .semi-huge-text{
+        width: 95%;
+        margin: 10px auto;
+        overflow: hidden;
         text-align: center;
         font-size: 2rem;
+        font-family: "Molot";
     }
     .hero-img{
-        height: 500px;
+        height: 400px;
     }
-    .subtitle{
-        font-size: 1.2rem;
-    }
-
     .heading{
         font-size: 2rem;
     }
@@ -69,20 +72,28 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     .explore-row{
         margin: 10px auto;
     }
+    .explore-left{
+        width: 95%;
+    }
+    .explore-right{
+        width: 95%;
+        margin: 10px auto;
+    }
     .explore-huge-text{
         width: 100%;
         font-size: 2rem;
     }
     .explore-img{
-        height: 100px;
+        height: 150px;
         width: 100%;
+        margin: 10px auto;
     }
     
     .history{
-        margin: 150px auto;
+        margin: 100px auto;
     }
     .history .heading{
-        font-size: 2.3rem;
+        font-size: 3rem;
         transform: scaleY(2);
         margin: 100px 0px;
     }
@@ -126,7 +137,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 0px auto;
     }
     iframe{
-        height: 500px;
+        height: 300px;
     }
 
     footer{    
@@ -141,19 +152,19 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
 }
 /*Media query for device max-width of 600px (Mobile devices)*/
-@media screen and (min-width: 415px) and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
     nav{
         height: 50px;
     }
     .logo{
         margin: 0px 20px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .nav-right{
         height: 40px;
         width: 100px;
         margin: 0px 20px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #menu{
@@ -168,18 +179,23 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     
     .hero{
         margin: 50px auto;
+        width: 95%;
     }
     .huge-text{
         width: 95%;
-        margin: 150px auto;
+        margin: 150px auto 120px;
         overflow: hidden;
-        font-size: 3rem;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
+        font-size: 5rem;
+        transform: scaleY(6); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
     .semi-huge-text{
+        width: 95%;
+        margin: 10px auto;
+        overflow: hidden;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
+        font-family: "Molot";
     }
     .hero-img{
         height: 500px;
@@ -201,7 +217,9 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .explore-row{
         margin: 10px auto;
+        padding: 20px 0px;
     }
+    
     .explore-huge-text{
         width: 100%;
         font-size: 2.5rem;
@@ -217,7 +235,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .history .heading{
         margin: 100px 0px;
-        font-size: 2.5rem;
+        font-size: 3rem;
         transform: scaleY(2);
     }
     .history-expandable{
@@ -261,7 +279,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 0px auto;
     }
     iframe{
-        height: 500px;
+        height: 300px;
     }
 
     footer{    
@@ -487,13 +505,13 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .logo{
         margin: 0px 20px;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .nav-right{
         height: 50px;
         width: 200px;
         margin: 0px 20px;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #menu{
@@ -510,16 +528,17 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 50px auto;
     }
     .huge-text{
-        font-size: 7rem;
-        margin: 140px auto;
+        font-size: 10rem;
+        margin: 160px auto 140px;
         letter-spacing: -5px;
         transform: scaleY(4); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
     .semi-huge-text{
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
         letter-spacing: 10px;
+        font-family: "Molot";
     }
     .hero-img{
         height: 600px;
@@ -661,7 +680,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         margin: 20px auto;
     }
     .explore-huge-text{
-        font-size: 2.3rem;
+        font-size: 3.5rem;
         text-align: center;
         letter-spacing: -5px;
         transform: scaleY(5); /* Stretch vertically by 2 times */
@@ -697,7 +716,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1024px) {
+@media screen and (min-width: 901px) and (max-width: 1010px) {
     .huge-text{
         font-size: 8.5rem;
         margin: 200px auto;
@@ -760,10 +779,10 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 
 @media screen and (min-width: 1010px) and (max-width: 1249px) {
     .huge-text{
-        font-size: 8rem;
+        font-size: 14rem;
         margin: 250px auto;
         letter-spacing: -5px;
-        transform: scaleY(3.5); /* Stretch vertically by 2 times */
+        transform: scaleY(5); /* Stretch vertically by 2 times */
         transform-origin: center; /* Keep transformation centered */
     }
 
@@ -773,9 +792,6 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     .explore-huge-text{
         font-size: 3rem;
         text-align: center;
-        letter-spacing: -5px;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
-        transform-origin: center; /* Keep transformation centered */
     }
     .row-1 .explore-huge-text{
         width: 48%;
@@ -827,13 +843,13 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .logo{
         margin: 0px 50px;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .nav-right{
         height: 70px;
         width: 150px;
         margin: 0px 50px;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     #menu{
@@ -848,38 +864,36 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
 
     .hero{
         margin: 100px auto;
+        width: 98%;
     }
     .huge-text{
-        margin: 270px auto;
-        letter-spacing: 5px;
-        transform: scaleY(3.5); /* Stretch vertically by 2 times */
-        transform-origin: center; /* Keep transformation centered */
-        font-size: 9.5rem;
+        width: 95%;
+        margin: 300px auto 250px;
+        overflow: hidden;
+        letter-spacing: 2rem;
+        transform: scaleY(4.5);
+        font-size: 14rem;
+        font-weight: bolder;
     }
     .semi-huge-text{
-        font-size: 6rem;
+        font-size: 5rem;
+        font-family: "Molot";
         text-align: center;
-        letter-spacing: 10px;
+        letter-spacing: 1.4rem;
     }
     .hero-img{
-        height: 100vh;
+        height: 700px;
     }
     .title{
         font-size: 4rem;
     }
-    .subtitle{
-        font-size: 1.5rem;
-    }
 
     .views-heading{
         margin-left: 50px;
-        font-size: 5rem;
-        transform: scaleY(3);
-        transform-origin: center;
+        font-size: 7rem;
     }
     .views-paragraph{
         width: 300px;
-        margin-top: 100px;
         margin-left: 50px;
         font-size: 3rem;
         font-family: "Exo-light";
@@ -891,53 +905,36 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
     }
     .explore-row{
         margin: 50px auto;
+        padding: 0px 20px;
+        flex-wrap: wrap;
+    }
+    .explore-left{
+        height: 600px;
+        width: 55%;
+        margin: 0px 50px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .explore-right{
+        height: 600px;
+        width: 35%;
     }
     .explore-huge-text{
-        font-size: 4rem;
-        text-align: center;
-        transform: scaleY(5); /* Stretch vertically by 2 times */
-        transform-origin: center; /* Keep transformation centered */
-    }
-    .row-1 .explore-huge-text{
-        width: 58%;
-    }
-    .row-1 .explore-img{
-        height: 220px;
-        width: 42%;
-    }
-    .row-2 .explore-huge-text{
-        width: 37%;
-        
-    }
-    .row-2 .explore-img{
-        height: 220px;
-        width: 63%;
-    }
-    .row-3 .explore-huge-text{
-        width: 59%;
-    }
-    .row-3 .explore-img{
-        height: 220px;
-        width: 41%;
-    }
-    .row-4 .explore-huge-text{
-        width: 67%;
-        
-    }  
-    .row-4 .explore-img{
-        height: 220px;
-        width: 33%;
+        font-size: 8rem;
     }
     
-    .history{
+    .explore-img{
+        height: 500px;
+        width: 90%;
         margin: 50px auto;
+    }
+
+    .history{
+        margin: 200px auto;
     }
     .history .heading{
         width: 55%;
-        margin: 300px 0px;
-        font-size: 5rem;
-        transform: scaleY(3); /* Stretch vertically by 2 times */
-        transform-origin: center; /* Keep transformation centered */
+        font-size: 9rem;
     }
     .history-expandable{
         width: 15%;
@@ -945,6 +942,7 @@ body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
         padding: 20px;
         border-radius: 20px;
         text-align: center;
+        color: rgb(50, 92, 117);
     }
     .history-expandable i{
         font-size: 10rem;
@@ -1017,7 +1015,7 @@ nav{
     border: none;
     border-radius: 10px;
     cursor: url("hand-cursor.png"), auto;
-    font-family: "20db";
+    font-family: "Molot";
     color: rgb(40, 40, 40);
 }
 
@@ -1031,6 +1029,7 @@ nav{
     height: 100vh;
     width: 100%;
     background-color: rgb(40, 40, 40);
+    color: rgb(50, 92, 117);
     display: none;
     position: fixed;
     top: 0px;
@@ -1053,25 +1052,23 @@ nav{
     border: none;
     background-color: transparent;
     color: rgb(40, 40, 40);
-    font-family: "20db";
+    font-family: "Molot";
 }
 .navigation:hover{
     cursor: url("right-arrow.png"), auto;
     color: white;
 }
 
-.hero{
-    width: 95%;
-}
 
 .huge-text{
-    font-family: "20db";
+    font-family: "Peace Sans";
     text-align: center;
-    color: rgb(40, 40, 40);
+    color: rgb(50, 92, 117);
 }
 
 .hero-img{
-    width: 100%;
+    width: 95%;
+    margin: 0px auto;
     background-image: url("placeholder.png");
     background-attachment: local;
     background-size: cover;
@@ -1091,20 +1088,21 @@ nav{
 .explore{
     width: 100%;
     background-color: white;
-    color: rgb(40, 40, 40);
 }
 
 .explore-row{
     width: 95%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .row-1, .row-3{
+    background-color: white;
     flex-wrap: wrap;
 }
-
 .row-2, .row-4{
+    background-color: rgb(40, 40, 40);
     flex-wrap: wrap-reverse;
 }
 
@@ -1116,7 +1114,7 @@ nav{
 
 
 .history{
-    width: 95%;
+    width: 90%;
 }
 
 .history-text{
@@ -1128,7 +1126,7 @@ nav{
 }
 
 .history .heading{
-    font-family: "20db";
+    font-family: "Peace Sans";
 }
 
 .history-expandable{
@@ -1158,12 +1156,12 @@ nav{
 .views{
     width: 100%;
     padding: 50px 0px;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 92, 117);
 }
 
 .views-heading{
-    color: rgb(209, 209, 203);
-    font-family: "20db";
+    color: white;
+    font-family: "Peace Sans";
 }
 
 .views-paragraph{
@@ -1171,9 +1169,11 @@ nav{
 }
 
 .explore-huge-text{
-    font-family: "20db";
-    color: rgb(40, 40, 40);    
+    font-family: "Molot";
+    color: rgb(40, 40, 40);
+    text-align: left;   
 }
+
 
 .explore-img{
     border-radius: 15px;
@@ -1218,7 +1218,7 @@ footer{
 }
 
 .footer-cluster{
-    width: 95%;
+    width: 90%;
     margin: 50px auto;
     text-align: right;
     font-size: 1.3rem;
@@ -1228,10 +1228,10 @@ footer{
     text-align: center;
 }
 footer .bold-text{
-    width: 95%;
+    width: 90%;
     margin: 10px auto;
     padding: 10px;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(50, 92, 117);
     color: white;
     text-align: center;
     font-family: "20db";
