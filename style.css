@@ -12,7 +12,7 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 4.2rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+    .huge-text{margin: 10px auto; text-align: center; font-size: 4rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 1.3rem; letter-spacing: 5px;}
     .hero-img{margin: 10px auto; height: 70vh; width: 100%;}
 
@@ -99,6 +99,53 @@
 
 
 }
+
+@media screen and (min-width: 800px) and (max-width: 1049px) {
+    /*Styling for nav bar and elements within*/
+    nav{width: 95%;}
+    .title{margin-left: 20px; font-size: 2rem; font-family: "Archivo Black";}
+    .menu-button{height: 50px; width: 150px; font-size: 2rem; font-family: "Archivo Black";}
+
+    /*Styling for hero section and elements within*/
+    .hero{width: 95%; padding-bottom: 20px;}
+    .huge-text{margin: 10px auto; text-align: center; font-size: 10rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+    .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 3rem; letter-spacing: 10px;}
+    .hero-img{margin: 10px auto; height: 100vh; width: 100%;}
+
+    /*Styling for blurb and history sections and the elements within*/
+    .blurb, .history{width: 95%; margin: 10px auto; padding-bottom: 20px;}
+    .blurb-heading, .history-heading{width: 50%; font-size: 3.5rem; font-family: "Archivo Black";}
+    .blurb hr{height: 250px; width: 1px; margin: 0px 10px; background-color: black; border: none;}
+    .blurb-paragraph, .history-paragraph{width: 40%; font-size: 1.5rem;}
+
+    /*Styling for section cards and the elements within*/
+    .section-cards{width: 95%; margin: 50px auto; padding-bottom: 50px;}
+    .section-card{height: 500px; width: 32%;}
+    .pop-up{height: 160px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 380px;}
+    .pop-up h2{font-size: 3rem; font-family: "Archivo Black";}
+    .pop-up p{font-size: 1.5rem;}
+    .section-card:hover .pop-up{top: 310px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+    /*Styling for history images*/
+    .history-images{width: 95%; margin: 50px auto;}
+    .history-images img{height: 200px; width: 250px; margin: 5px; object-fit: cover;}
+
+    /*Styling for event board and child elements*/
+    .event-board{width: 95%; margin: 50px auto; padding: 20px 0px;}
+    .event-board-heading{width: 25%; font-size: 3.5rem; font-family: "Archivo Black";}
+    .board{height: 80vh; width: 70%; background-color: white;}
+
+    /*Styling for gallery section*/
+    .gallery{width: 95%; margin: 50px auto; padding: 50px 0px;}
+    .gallery-heading{width: 30%; font-size: 3.5rem; font-family: "Archivo Black";}
+    .display{width: 100%;}
+    .display img{height: 350px; width: 23%; margin: 5px; object-fit: cover;}
+
+    .drop-down-menu button{width: 100%; margin: 20px auto; font-size: 8rem;}
+
+
+}
+
 
 @media screen and (min-width: 1050px) and (max-width: 1600px) {
     /*Styling for nav bar and elements within*/
