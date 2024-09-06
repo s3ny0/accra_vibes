@@ -4,7 +4,7 @@
 @font-face {font-family: "Abel"; src: url("abel-regular.ttf");}
 @font-face {font-family: "Archivo Black"; src: url("ArchivoBlack.otf");}
 
-@media screen and (max-width: 450px;) {
+@media screen and (max-width: 450px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
     .title{margin-left: 20px; font-size: 1.3rem; font-family: "Archivo Black";}
