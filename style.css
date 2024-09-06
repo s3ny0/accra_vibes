@@ -1,0 +1,229 @@
+
+/*Document Fonts*/
+@font-face {font-family: "Dubtronic"; src: url("Dubtronic-Solid.otf");}
+@font-face {font-family: "Abel"; src: url("abel-regular.ttf");}
+@font-face {font-family: "Archivo Black"; src: url("ArchivoBlack.otf");}
+
+@media screen and (max-width: 550px) {
+    /*Styling for nav bar and elements within*/
+    nav{width: 95%;}
+    .title{margin-left: 20px; font-size: 1.3rem; font-family: "Archivo Black";}
+    .menu-button{height: 50px; width: 150px; font-size: 1.3rem; font-family: "Archivo Black";}
+
+    /*Styling for hero section and elements within*/
+    .hero{width: 95%; padding-bottom: 20px;}
+    .huge-text{margin: 10px auto; text-align: center; font-size: 5rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+    .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 1.3rem; letter-spacing: 5px;}
+    .hero-img{margin: 10px auto; height: 70vh; width: 100%;}
+
+    /*Styling for blurb and history sections and the elements within*/
+    .blurb, .history{width: 95%; margin: 10px auto; padding-bottom: 20px;}
+    .blurb-heading{width: 50%; font-size: 2rem; font-family: "Archivo Black";}
+    .blurb hr{height: 250px; width: 1px; margin: 0px 10px; background-color: black; border: none;}
+    .blurb-paragraph{width: 40%; font-size: 1rem;}
+
+    /*Styling for section cards and the elements within*/
+    .section-cards{width: 95%; margin: 50px auto; padding-bottom: 50px;}
+    .section-card{height: 500px; width: 95%; margin: 10px auto;}
+    .pop-up{height: 150px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 380px;}
+    .pop-up h2{font-size: 3rem; font-family: "Archivo Black";}
+    .pop-up p{font-size: 1rem;}
+    .section-card:hover .pop-up{top: 320px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+    /*Styling for history images*/
+    .history-heading{width: 95%; font-size: 2rem; font-family: "Archivo Black";}
+    .history-paragraph{width: 95%; font-size: 1rem;}
+    .history-images{width: 95%; margin: 50px auto;}
+    .history-images img{height: 200px; width: 100%; margin: 5px; object-fit: cover;}
+
+    /*Styling for event board and child elements*/
+    .event-board{width: 95%; margin: 50px auto; padding: 20px 0px;}
+    .event-board-heading{width: 95%; margin: 10px auto; font-size: 2rem; font-family: "Archivo Black";}
+    .board{height: 80vh; width: 95%; margin: 10px auto; background-color: white;}
+
+    /*Styling for gallery section*/
+    .gallery{width: 95%; margin: 50px auto; padding: 50px 0px;}
+    .gallery-heading{width: 30%; font-size: 2rem; font-family: "Archivo Black";}
+    .display{width: 100%;}
+    .display img{height: 250px; width: 45%; margin: 5px; object-fit: cover;}
+
+    .drop-down-menu button{width: 100%; margin: 20px auto; font-size: 4rem;}
+
+
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1600px) {
+    /*Styling for nav bar and elements within*/
+    nav{width: 95%;}
+    .title{margin-left: 20px; font-size: 2rem; font-family: "Archivo Black";}
+    .menu-button{height: 50px; width: 150px; font-size: 2rem; font-family: "Archivo Black";}
+
+    /*Styling for hero section and elements within*/
+    .hero{width: 95%; padding-bottom: 20px;}
+    .huge-text{margin: 10px auto; text-align: center; font-size: 15rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+    .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 3rem; letter-spacing: 10px;}
+    .hero-img{margin: 10px auto; height: 100vh; width: 100%;}
+
+    /*Styling for blurb and history sections and the elements within*/
+    .blurb, .history{width: 95%; margin: 10px auto; padding-bottom: 20px;}
+    .blurb-heading, .history-heading{width: 50%; font-size: 4rem; font-family: "Archivo Black";}
+    .blurb hr{height: 250px; width: 1px; margin: 0px 10px; background-color: black; border: none;}
+    .blurb-paragraph, .history-paragraph{width: 40%; font-size: 1.5rem;}
+
+    /*Styling for section cards and the elements within*/
+    .section-cards{width: 95%; margin: 50px auto; padding-bottom: 50px;}
+    .section-card{height: 500px; width: 32%;}
+    .pop-up{height: 150px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 380px;}
+    .pop-up h2{font-size: 3rem; font-family: "Archivo Black";}
+    .pop-up p{font-size: 1.5rem;}
+    .section-card:hover .pop-up{top: 320px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+    /*Styling for history images*/
+    .history-images{width: 95%; margin: 50px auto;}
+    .history-images img{height: 200px; width: 250px; margin: 5px; object-fit: cover;}
+
+    /*Styling for event board and child elements*/
+    .event-board{width: 95%; margin: 50px auto; padding: 20px 0px;}
+    .event-board-heading{width: 25%; font-size: 4rem; font-family: "Archivo Black";}
+    .board{height: 80vh; width: 70%; background-color: white;}
+
+    /*Styling for gallery section*/
+    .gallery{width: 95%; margin: 50px auto; padding: 50px 0px;}
+    .gallery-heading{width: 30%; font-size: 4rem; font-family: "Archivo Black";}
+    .display{width: 100%;}
+    .display img{height: 350px; width: 23%; margin: 5px; object-fit: cover;}
+
+    .drop-down-menu button{width: 100%; margin: 20px auto; font-size: 9rem;}
+
+
+}
+
+/*Changes to styling below will affect all elements across device widths*/
+body{
+    margin: 0px;
+    background-color: rgb(189, 174, 115);
+    font-family: "Abel";
+    cursor: url("cursor.png"), auto;
+}
+
+/*Scrollbar styling*/
+body::-webkit-scrollbar {width: 15px; cursor: url("Images/hand-cursor.png"), auto;}
+body::-webkit-scrollbar-track {background: none;}
+body::-webkit-scrollbar-thumb {background: rgb(40, 40, 40); border-radius: 15px; border: none;}
+body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
+
+
+/*Styling for nav bar and elements within*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    border-bottom: 1px solid black;
+}
+.menu-button{
+    border: none;
+    background-color: transparent;
+}
+.menu-button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: url("hand-cursor.png"), auto;
+}
+
+/*Styling for hero section and elements within*/
+.hero{
+    margin: 20px auto;
+    border-bottom: 1px solid black;
+}
+.huge-text{
+    font-family: "Dubtronic";
+}
+.sub-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.hero-img{
+    object-fit: cover;
+}
+
+/*Styling for blurb and history sections and the elements within*/
+.blurb, .history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+/*Styling for section cards and the elements within*/
+.section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+.section-card{
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    overflow: hidden;
+}
+.card-1{background-image: url("placeholder.png");}
+.card-2{background-image: url("placeholder.png");}
+.card-3{background-image: url("placeholder.png");}
+
+/*Styling for history images*/
+.history-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styling for event board and child elements*/
+.event-board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+
+/*Styling for gallery section*/
+.gallery{
+    border-bottom: 1px solid black;
+}
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/*Drop Down Menu*/
+.drop-down-menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    display: none;
+}
+.drop-down-menu button{
+    background-color: transparent;
+    border: none;
+    color: rgb(189, 174, 115);
+    font-family: "Dubtronic";
+}
+
+.drop-down-menu button:hover{
+    color: white;
+    cursor: url("right-arrow.png"), auto;
+}
+

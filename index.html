@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Accra Vibes | Homepage</title>
+</head>
+<body>
+    <nav>
+        <h1 class="title">ACCRA VIBES</h1>
+        <button class="menu-button" id="menu-button">MENU</button>
+    </nav>
+    <div class="hero">
+        <h1 class="huge-text">DISCOVER</h1>
+        <div class="sub-text">
+            <h3>The heartbeat of Accra</h3>
+        </div>
+        <img class="hero-img" src="placeholder.png" alt="">
+    </div>
+    <div class="blurb">
+        <h1 class="blurb-heading">An In-depth City Guide Into the City of Accra</h1>
+        <hr>
+        <p class="blurb-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur et metus ut urna ultricies suscipit. Vivamus non libero id eros varius euismod. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel urna vel nisl varius tincidunt. Nullam in risus nec lectus aliquet tincidunt non eu leo. Donec ut tincidunt.</p>
+    </div>
+    <div class="section-cards">
+        <div class="section-card card-1">
+            <div class="pop-up">
+                <h2>Title</h2>
+                <p>A brief description goes here</p>
+            </div>
+        </div>
+        <div class="section-card card-2">
+            <div class="pop-up">
+                <h2>Title</h2>
+                <p>A brief description goes here</p>
+            </div>
+        </div>
+        <div class="section-card card-3">
+            <div class="pop-up">
+                <h2>Title</h2>
+                <p>A brief description goes here</p>
+            </div>
+        </div>
+    </div>
+    <div class="history">
+        <h1 class="history-heading">A STORY OF RESILIENCE AND HARDWORK</h1>
+        <p class="history-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur et metus ut urna ultricies suscipit. Vivamus non libero id eros varius euismod. Aliquam erat volutpat. Sed malesuada lacus nec purus ullamcorper, nec aliquet urna sollicitudin. Maecenas sed ante at libero vestibulum varius eget ac sem. Donec sed mi ut ante lacinia congue. In a turpis nec libero gravida viverra. Nam ut metus nec dolor condimentum varius et ac mauris. Integer id turpis urna. Proin faucibus eros sit amet quam tempus, sed vestibulum magna posuere. Aenean id purus sit amet libero vehicula euismod. Pellentesque cursus libero vitae justo consequat, ut imperdiet libero varius. Fusce varius leo at nisl faucibus, nec fringilla est pharetra. Vestibulum congue nisl sit amet quam vehicula, sed faucibus justo tempor. Donec non felis vel eros auctor feugiat. Suspendisse potenti. Ut et magna et lorem condimentum cursus. Cras id dictum elit. Duis scelerisque, dui vel suscipit vestibulum, felis dui gravida purus, eu aliquam magna justo non nisi. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur et metus ut urna ultricies suscipit. Vivamus non libero id eros varius euismod. Aliquam erat volutpat. Sed malesuada lacus nec purus ullamcorper, nec aliquet urna sollicitudin. Maecenas sed ante at libero vestibulum varius eget ac sem. Donec sed mi ut ante lacinia congue. In a turpis nec libero gravida viverra. Nam ut metus nec dolor condimentum varius et ac mauris. Integer id turpis urna. Proin faucibus eros sit amet quam tempus, sed vestibulum magna posuere. Aenean id purus sit amet libero vehicula euismod. Pellentesque cursus libero vitae justo consequat, ut imperdiet libero varius. Fusce varius leo at nisl faucibus, nec fringilla est pharetra. Vestibulum congue nisl sit amet quam vehicula, sed faucibus justo tempor. Donec non felis vel eros auctor feugiat. Suspendisse potenti. Ut et magna et lorem condimentum cursus. Cras id dictum elit. Duis scelerisque, dui vel suscipit vestibulum, felis dui gravida purus, eu aliquam magna justo non nisi.</p>
+    </div>
+    <div class="history-images">
+        <img src="placeholder.png" alt="">
+        <img src="placeholder.png" alt="">
+        <img src="placeholder.png" alt="">
+    </div>
+    <div class="event-board">
+        <h1 class="event-board-heading">UPCOMING EVENTS</h1>
+        <div class="board"></div>
+    </div>
+    <div class="gallery">
+        <h1 class="gallery-heading">SCENES FROM ACCRA</h1>
+        <div class="display">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+            <img src="placeholder.png" alt="">
+        </div>
+    </div>
+
+    <!--Drop Down Menu-->
+    <div class="drop-down-menu" id="drop-down-menu">
+        <a href="index.html"><button>HOME</button></a>
+        <a href="explore.html"><button>EXPLORE</button></a>
+        <button>CONTACT</button>
+    </div>
+    <!-- Custom jQuery for dropdown -->
+    <script>
+        $(document).ready(function(){
+            // Show dropdown menu on button click
+            $("#menu-button").click(function(){
+                $("#drop-down-menu").show();
+            });
+        });
+    </script>
+</body>
+</html>
