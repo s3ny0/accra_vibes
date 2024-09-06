@@ -147,7 +147,7 @@
 }
 
 
-@media screen and (min-width: 1150px) and (max-width: 1600px) {
+@media screen and (min-width: 1150px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
     .title{margin-left: 20px; font-size: 2rem; font-family: "Archivo Black";}
@@ -155,7 +155,7 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 10rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+    .huge-text{margin: 10px auto; text-align: center; font-size: 13rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 3rem; letter-spacing: 10px;}
     .hero-img{margin: 10px auto; height: 100vh; width: 100%;}
 
