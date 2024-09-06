@@ -100,7 +100,7 @@
 
 }
 
-@media screen and (min-width: 800px) and (max-width: 1049px) {
+@media screen and (min-width: 800px) and (max-width: 1149px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
     .title{margin-left: 20px; font-size: 2rem; font-family: "Archivo Black";}
@@ -147,7 +147,7 @@
 }
 
 
-@media screen and (min-width: 1050px) and (max-width: 1600px) {
+@media screen and (min-width: 1150px) and (max-width: 1600px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
     .title{margin-left: 20px; font-size: 2rem; font-family: "Archivo Black";}
