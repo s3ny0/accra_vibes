@@ -146,6 +146,9 @@
 
 }
 
+@media screen and (min-width: 1200) and (max-width: 1400) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 12rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+}
 
 @media screen and (min-width: 1150px) {
     /*Styling for nav bar and elements within*/
