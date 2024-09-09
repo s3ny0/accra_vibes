@@ -239,7 +239,7 @@
 /*Changes to styling below will affect all elements across device widths*/
 body{
     margin: 0px;
-    background-color: rgb(145, 155, 13);
+    background-color: rgb(180, 68, 34); /* rgb(145, 155, 13);*/
     font-family: "Qarmic Sans";
     cursor: url("cursor.png"), auto;
 }
