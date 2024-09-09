@@ -3,6 +3,8 @@
 @font-face {font-family: "Dubtronic"; src: url("Dubtronic-Solid.otf");}
 @font-face {font-family: "Abel"; src: url("abel-regular.ttf");}
 @font-face {font-family: "Archivo Black"; src: url("ArchivoBlack.otf");}
+@font-face {font-family: "Diner Obese"; src: url("Diner-Obese.ttf");}
+@font-face {font-family: "Sniglet"; src: url("Sniglet-ExtraBold.otf");}
 
 @media screen and (max-width: 450px) {
     /*Styling for nav bar and elements within*/
@@ -12,7 +14,6 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 4rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 1.3rem; letter-spacing: 5px;}
     .hero-img{margin: 10px auto; height: 70vh; width: 100%;}
 
@@ -60,7 +61,6 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 5rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 1.3rem; letter-spacing: 5px;}
     .hero-img{margin: 10px auto; height: 70vh; width: 100%;}
 
@@ -108,7 +108,6 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 9.5rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 3rem; letter-spacing: 10px;}
     .hero-img{margin: 10px auto; height: 100vh; width: 100%;}
 
@@ -146,10 +145,6 @@
 
 }
 
-@media screen and (min-width: 1200) and (max-width: 1400) {
-    .huge-text{margin: 10px auto; text-align: center; font-size: 12rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
-}
-
 @media screen and (min-width: 1150px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
@@ -158,7 +153,6 @@
 
     /*Styling for hero section and elements within*/
     .hero{width: 95%; padding-bottom: 20px;}
-    .huge-text{margin: 10px auto; text-align: center; font-size: 13rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
     .sub-text{height: 70px; width: 100%; margin: 10px auto; font-size: 3rem; letter-spacing: 10px;}
     .hero-img{margin: 10px auto; height: 100vh; width: 100%;}
 
@@ -166,10 +160,10 @@
     .blurb, .history{width: 95%; margin: 10px auto; padding-bottom: 20px;}
     .blurb-heading, .history-heading{width: 50%; font-size: 4rem; font-family: "Archivo Black";}
     .blurb hr{height: 250px; width: 1px; margin: 0px 10px; background-color: black; border: none;}
-    .blurb-paragraph, .history-paragraph{width: 40%; font-size: 1.5rem;}
+    .blurb-paragraph, .history-paragraph{width: 40%; font-size: 1.5rem; color: white;}
 
     /*Styling for section cards and the elements within*/
-    .section-cards{width: 95%; margin: 50px auto; padding-bottom: 50px;}
+    .section-cards{width: 95%; margin: 50px auto; padding-top: 50px; padding-bottom: 50px;}
     .section-card{height: 500px; width: 32%;}
     .pop-up{height: 150px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 380px;}
     .pop-up h2{font-size: 3rem; font-family: "Archivo Black";}
@@ -187,8 +181,8 @@
 
     /*Styling for gallery section*/
     .gallery{width: 95%; margin: 50px auto; padding: 50px 0px;}
-    .gallery-heading{width: 30%; font-size: 4rem; font-family: "Archivo Black";}
-    .display{width: 100%;}
+    .gallery-heading{width: 30%; margin-left: 50px; font-size: 4rem; font-family: "Archivo Black"; color: white;}
+    .display{width: 95%; margin: 0px auto;}
     .display img{height: 350px; width: 23%; margin: 5px; object-fit: cover;}
 
     .drop-down-menu button{width: 100%; margin: 20px auto; font-size: 9rem;}
@@ -199,7 +193,7 @@
 /*Changes to styling below will affect all elements across device widths*/
 body{
     margin: 0px;
-    background-color: rgb(189, 174, 115);
+    background-color: rgb(145, 155, 13);
     font-family: "Abel";
     cursor: url("cursor.png"), auto;
 }
@@ -219,9 +213,13 @@ nav{
     margin: 20px auto;
     border-bottom: 1px solid black;
 }
+.title{
+    font-family: "Dubtronic";
+}
 .menu-button{
     border: none;
     background-color: transparent;
+    font-family: "Dubtronic";
 }
 .menu-button:hover{
     background-color: black;
@@ -236,7 +234,36 @@ nav{
     border-bottom: 1px solid black;
 }
 .huge-text{
-    font-family: "Dubtronic";
+    /*font-family: "Dubtronic";*/
+    font-family: "Sniglet";
+    color: rgb(12, 62, 92);
+}
+@media  screen and (max-width: 370px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 3.5rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+}
+@media screen and (min-width: 371px) and (max-width: 450px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 4.5rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 7rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+}
+@media screen and (min-width: 601px) and (max-width: 799px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 10rem; /*letter-spacing: 20px; transform: scaleY(5);*/}
+}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 11.5rem;}
+}
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 13rem;}
+}
+@media screen and (min-width: 1151px) and (max-width: 1300px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 15rem;}
+}
+@media screen and (min-width: 1301px) and (max-width: 1450px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 17rem;}
+}
+@media screen and (min-width: 1451px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 19rem;}
 }
 .sub-text{
     display: flex;
@@ -244,6 +271,7 @@ nav{
     justify-content: center;
     background-color: black;
     color: white;
+    font-family: "Sniglet";
 }
 .hero-img{
     object-fit: cover;
@@ -256,6 +284,9 @@ nav{
     justify-content: space-evenly;
     border-bottom: 1px solid black;
 }
+.blurb-heading, .history-heading {
+    color: rgb(12, 62, 92);
+}
 
 /*Styling for section cards and the elements within*/
 .section-cards{
@@ -263,6 +294,7 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    background-color: black;
     border-bottom: 1px solid black;
 }
 .section-card{
@@ -286,13 +318,14 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: rgb(12, 62, 92);
     color: white;
 }
 
 /*Styling for gallery section*/
 .gallery{
-    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: rgb(180, 68, 34);
 }
 .display{
     display: flex;
@@ -310,18 +343,17 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(180, 68, 34);
     display: none;
 }
 .drop-down-menu button{
     background-color: transparent;
     border: none;
-    color: rgb(189, 174, 115);
-    font-family: "Dubtronic";
+    color: black;
+    font-family: "Sniglet";
 }
 
 .drop-down-menu button:hover{
     color: white;
     cursor: url("right-arrow.png"), auto;
 }
-
