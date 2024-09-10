@@ -31,22 +31,22 @@
     </div>
     <div class="section-cards" data-aos="fade-up" data-aos-duration="1000">
         <div class="section-card card-1" data-aos="zoom-in" data-aos-duration="1200">
-            <a href="food_culture.html"><div class="pop-up">
-                <h2 data-aos="flip-right" data-aos-duration="500">FOOD CULTURE</h2>
+            <div class="pop-up">
+                <a href="food_culture.html"><h2 data-aos="flip-right" data-aos-duration="500">FOOD CULTURE</h2></a>
                 <p>A brief description goes here</p>
-            </div></a>
+            </div>
         </div>
         <div class="section-card card-2" data-aos="zoom-in" data-aos-duration="1300">
-            <a href="lifestyle.html"><div class="pop-up">
-                <h2 data-aos="flip-right" data-aos-duration="500">LIFESTYLE</h2>
+            <div class="pop-up">
+                <a href="lifestyle.html"><h2 data-aos="flip-right" data-aos-duration="500">LIFESTYLE</h2></a>
                 <p>A brief description goes here</p>
-            </div></a>
+            </div>
         </div>
         <div class="section-card card-3" data-aos="zoom-in" data-aos-duration="1400">
-            <a href="top_destinations.html"><div class="pop-up">
-                <h2 data-aos="flip-right" data-aos-duration="500">TOP DESTINATIONS</h2>
+            <div class="pop-up">
+                <a href="top_destinations.html"><h2 data-aos="flip-right" data-aos-duration="500">TOP PLACES</h2></a>
                 <p>A brief description goes here</p>
-            </div></a>
+            </div>
         </div>
     </div>
     <div class="history">
@@ -88,24 +88,26 @@
             <p data-aos="fade-up" data-aos-duration="1200">Link</p>
             <p data-aos="fade-up" data-aos-duration="1300">Link</p>
         </div>
-        <div class="bold-footer" data-aos="fade-up" data-aos-duration="1000">
-            <h1 data-aos="zoom-in" data-aos-duration="1500">ACCRA VIBES</h1>
+        <div class="bold-footer" data-aos="zoom-in" data-aos-duration="1000">
+            <h1>ACCRA VIBES</h1>
         </div>
-        <p class="copyright" style="text-align: center;">copyright @ senyosco's inc 2024</p>
     </footer>
+    <p class="copyright" style="text-align: center;">copyright @ senyosco's inc 2024</p>
 
     <!--Drop Down Menu-->
     <div class="drop-down-menu" id="drop-down-menu">
-        <a href="index.html"><button>HOME</button></a>
-        <a href="explore.html"><button>EXPLORE</button></a>
-        <button>CONTACT</button>
+        <div class="menu-buttons">
+            <a href="index.html"><button>HOME</button></a>
+            <a href=""><button>EXPLORE</button></a>
+            <button>CONTACT</button>
+        </div>
     </div>
     <!-- Custom jQuery for dropdown -->
     <script>
         $(document).ready(function(){
             // Show dropdown menu on button click
             $("#menu-button").click(function(){
-                $("#drop-down-menu").show();
+                $("#drop-down-menu").slideDown(1000);
             });
         });
     </script>
