@@ -5,6 +5,441 @@
 @font-face {font-family: "Qarmic Sans"; src: url("Qarmic_sans_Abridged.ttf");}
 @font-face {font-family: "Sniglet"; src: url("Sniglet-ExtraBold.otf");}
 
+/*Changes to styling below will affect all elements across device widths*/
+body{
+    margin: 0px;
+    background-color: rgb(180, 68, 34);
+    font-family: "Qarmic Sans";
+    color: white;
+    cursor: url("cursor.png"), auto;
+}
+
+/*Scrollbar styling*/
+body::-webkit-scrollbar {width: 15px; cursor: url("Images/hand-cursor.png"), auto;}
+body::-webkit-scrollbar-track {background: none;}
+body::-webkit-scrollbar-thumb {background: rgb(40, 40, 40); border-radius: 15px; border: none;}
+body::-webkit-scrollbar-thumb:hover {background: rgb(40, 40, 40); border: none;}
+
+
+/*Styling for nav bar and elements within*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.title{
+    font-family: "Karatula";
+    color: rgb(30, 30, 30);
+}
+@media screen and (max-width: 450px) {
+    .title{margin-left: 20px; font-size: 1.3rem;}
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    .title{margin-left: 20px; font-size: 1.5rem;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .title{margin-left: 20px; font-size: 1.7rem;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .title{margin-left: 30px; font-size: 1.9rem;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .title{margin-left: 40px; font-size: 2.1rem;}
+}
+@media screen and (min-width: 1201px) {
+    .title{margin-left: 40px; font-size: 2.4rem;}
+}
+.menu-button{
+    border: none;
+    background-color: transparent;
+    font-family: "Karatula";
+    color: rgb(30, 30, 30);
+}
+@media screen and (max-width: 400px) {
+    .menu-button{height: 50px; width: 100px; font-size: 1.3rem;}
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .menu-button{height: 50px; width: 120px; font-size: 1.5rem;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .menu-button{height: 50px; width: 140px; font-size: 1.7rem;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .menu-button{height: 50px; width: 160px; font-size: 1.9rem;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .menu-button{height: 50px; width: 160px; font-size: 2.1rem;}
+}
+@media screen and (min-width: 1201px) {
+    .menu-button{height: 50px; width: 200px; font-size: 2.4rem;}
+}
+.menu-button:hover{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    transition: .5s;
+    cursor: url("hand-cursor.png"), auto;
+}
+
+/*Styling for hero section and elements within*/
+.hero{
+    width: 95%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.huge-text{
+    font-family: "Sniglet";
+    color: rgb(12, 62, 92);
+}
+@media screen and (max-width: 450px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 4.3rem;}
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 5rem;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 8rem;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 9rem;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 12rem;}
+}
+@media screen and (min-width: 1201px) {
+    .huge-text{margin: 10px auto; text-align: center; font-size: 13rem;}
+}
+.sub-text{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-family: "Karatula";
+}
+@media  screen and (max-width: 450px) {
+    .sub-text{ font-size: 0.5rem; letter-spacing: 5px;}
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+    .sub-text{ font-size: 1rem; letter-spacing: 5px;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .sub-text{ font-size: 1.3rem; letter-spacing: 5px;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .sub-text{ font-size: 2rem; letter-spacing: 5px;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .sub-text{ font-size: 2.3rem; letter-spacing: 5px;}
+}
+@media screen and (min-width: 1201px) {
+    .sub-text{ font-size: 2.5rem; letter-spacing: 5px;}
+}
+.hero-img{
+    width: 100%;
+    height: 90vh;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+/*Styling for blurb and history sections and the elements within*/
+.blurb, .history{
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.blurb-heading, .history-heading {
+    color: rgb(12, 62, 92);
+    font-family: "Karatula";
+}
+@media screen and (max-width: 450px) {
+    .blurb {display: flex; flex-direction: column; align-items: center; border-bottom: none;}
+    .blurb hr{height: 1px; width: 95%; border: none; background-color: rgb(30, 30, 30);}
+    .blurb-heading {width: 95%; font-size: 1.3rem;}
+    .blurb-paragraph {width: 90%; font-size: 1.1rem;}
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    .blurb {display: flex; flex-direction: column; align-items: center; border-bottom: none;}
+    .blurb hr{height: 1px; width: 95%; border: none; background-color: rgb(30, 30, 30);}
+    .blurb-heading {width: 95%; font-size: 1.5rem;}
+    .blurb-paragraph {width: 90%; font-size: 1.3rem;}
+}
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    .blurb {padding-bottom: 20px;}
+    .blurb hr{height: 200px; width: 1px; margin: 10px; border: none; background-color: rgb(30, 30, 30);}
+    .blurb-heading {width: 45%; font-size: 1.9rem;}
+    .blurb-paragraph {width: 50%; font-size: 1.7rem;}
+}
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .blurb {padding-bottom: 20px;}
+    .blurb hr{height: 250px; width: 1px; margin: 10px; border: none; background-color: rgb(30, 30, 30);}
+    .blurb-heading {width: 45%; font-size: 2.3rem;}
+    .blurb-paragraph {width: 50%; font-size: 2rem;}
+}
+@media screen and (min-width: 1201px) {
+    .blurb {padding-bottom: 20px;}
+    .blurb hr{height: 250px; width: 1px; margin: 10px; border: none; background-color: rgb(30, 30, 30);}
+    .blurb-heading {width: 45%; font-size: 2.4rem;}
+    .blurb-paragraph {width: 50%; font-size: 2rem;}
+}
+
+/*Styling for section cards and the elements within*/
+.section-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 50px auto;
+    padding: 30px 0px;
+    background-color: rgb(30, 30, 30);
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.section-card{
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    overflow: hidden;
+}
+.card-1{background-image: url("placeholder.png");}
+.card-2{background-image: url("placeholder.png");}
+.card-3{background-image: url("placeholder.png");}
+.pop-up h2{
+    font-family: "Karatula";
+}
+.section-card a{
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+}
+@media screen and (max-width: 450px) {
+    .section-card{height: 300px; width: 95%; margin: 10px auto;}
+    .pop-up{height: 150px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 240px;}
+    .pop-up h2{font-size: 1.3rem;}
+    .pop-up p{font-size: 1.1rem;}
+    .section-card:hover .pop-up{top: 120px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    .section-card{height: 350px; width: 95%; margin: 10px auto;}
+    .pop-up{height: 200px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 290px;}
+    .pop-up h2{font-size: 1.5rem;}
+    .pop-up p{font-size: 1.3rem;}
+    .section-card:hover .pop-up{top: 110px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+}
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    .section-card{height: 300px; width: 32%; margin: 10px auto;}
+    .pop-up{height: 150px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 210px;}
+    .pop-up h2{font-size: 1.9rem;}
+    .pop-up p{font-size: 1.7rem;}
+    .section-card:hover .pop-up{top: 120px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+}
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .section-card{height: 450px; width: 32%; margin: 10px auto;}
+    .pop-up{height: 170px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 370px;}
+    .pop-up h2{font-size: 2.3rem;}
+    .pop-up p{font-size: 2rem;}
+    .section-card:hover .pop-up{top: 247px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+}
+@media screen and (min-width: 1201px) {
+    .section-card{height: 500px; width: 32%; margin: 10px auto;}
+    .pop-up{height: 170px; width: 90%; margin: 0px auto; padding: 10px; position: relative; top: 390px;}
+    .pop-up h2{font-size: 2.4rem;}
+    .pop-up p{font-size: 2rem;}
+    .section-card:hover .pop-up{top: 300px; cursor: url("right-arrow.png"), auto; transition: .5s; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) );}
+
+}
+
+/*Styling for history section*/
+.history-images{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 450px) {
+    .history-heading{width: 95%; font-size: 1.3rem;}
+    .history-paragraph{width: 90%; font-size: 1.1rem;}
+    .history-images img{height: 100px; width: 30%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    .history-heading{width: 95%; font-size: 1.5rem;}
+    .history-paragraph{width: 90%; font-size: 1.3rem;}
+    .history-images img{height: 100px; width: 30%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    .history-heading{width: 45%; font-size: 1.9rem;}
+    .history-paragraph{width: 50%; font-size: 1.7rem;}
+    .history-images img{height: 150px; width: 30%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .history-heading{width: 45%; font-size: 2.3rem;}
+    .history-paragraph{width: 50%; font-size: 2rem;}
+    .history-images img{height: 150px; width: 25%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 1201px) {
+    .history-heading{width: 45%; font-size: 2.4rem;}
+    .history-paragraph{width: 50%; font-size: 2rem;}
+    .history-images img{height: 200px; width: 25%; margin: 5px; object-fit: cover;}
+}
+
+
+/*Styling for event board and child elements*/
+.event-board{
+    width: 95%;
+    margin: 50px auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(12, 62, 92);
+    color: white;
+}
+.board{
+    background-color: white;
+}
+
+/*Styling for gallery section*/
+.gallery{
+    width: 95%;
+    margin: 30px auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+.display{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+@media screen and (max-width: 450px) {
+    .event-board-heading, .gallery-heading{width: 90%; margin: 30px 0px; font-size: 1.3rem;}
+    .board{height: 560px; width: 95%;}
+    .display img{height: 200px; width: 47%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    .event-board-heading, .gallery-heading{width: 90%; margin: 30px 0px; font-size: 1.5rem;}
+    .board{height: 560px; width: 95%;}
+    .display img{height: 200px; width: 43%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    .event-board-heading, .gallery-heading{width: 90%; margin: 30px 0px; font-size: 1.7rem;}
+    .board{height: 560px; width: 95%;}
+    .display img{height: 200px; width: 23%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .event-board-heading, .gallery-heading{width: 90%; margin: 30px 0px; font-size: 2.3rem;}
+    .board{height: 560px; width: 95%;}
+    .display img{height: 200px; width: 30%; margin: 5px; object-fit: cover;}
+}
+@media screen and (min-width: 1201px) {
+    .event-board-heading, .gallery-heading{width: 90%; margin: 30px 0px; font-size: 2.4rem;}
+    .board{height: 560px; width: 95%;}
+    .display img{height: 250px; width: 30%; margin: 5px; object-fit: cover;}
+}
+
+/*Footer styling*/
+footer{
+    width: 95%;
+    margin: 30px auto;
+}
+.bold-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    background-color: rgb(12, 62, 92);
+    color: white;
+    text-align: center;
+    font-family: "Karatula";
+}
+@media screen and (max-width: 450px) {
+    footer{font-size: 1.1rem;}
+    .bold-footer{font-size: 1.3rem;}
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    footer{font-size: 1.3rem;}
+    .bold-footer{font-size: 1.7rem;}
+}
+@media screen and (min-width: 701px) and (max-width: 850px) {
+    footer{font-size: 1.7rem;}
+    .bold-footer{font-size: 2.3rem; letter-spacing: 10px;}
+}
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    footer{font-size: 2rem;}
+    .bold-footer{font-size: 2.7rem; letter-spacing: 10px;}
+}
+@media screen and (min-width: 1201px) {
+    footer{font-size: 2rem;}
+    .bold-footer{font-size: 2.7rem; letter-spacing: 15px;}
+}
+
+/*Drop Down Menu*/
+.drop-down-menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(12, 62, 92);
+    display: none;
+}
+.menu-buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drop-down-menu button{
+    background-color: transparent;
+    border: none;
+    color: rgb(180, 68, 34);
+    font-family: "Karatula";
+}
+@media screen and (max-width: 400px) {
+    .drop-down-menu button{font-size: 3rem;}
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .drop-down-menu button{font-size: 4rem;}
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .drop-down-menu button{font-size: 5rem;}
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .drop-down-menu button{font-size: 6rem;}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .drop-down-menu button{font-size: 5rem;}
+}
+@media screen and (min-width: 1201px) {
+    .drop-down-menu button{font-size: 7rem;}
+}
+.drop-down-menu button:hover{
+    color: white;
+    cursor: url("right-arrow.png"), auto;
+}
+
+/*Document Fonts*/
+@font-face {font-family: "Dubtronic"; src: url("Dubtronic-Solid.otf");}
+@font-face {font-family: "Karatula"; src: url("KARAI___.ttf");}
+@font-face {font-family: "Qarmic Sans"; src: url("Qarmic_sans_Abridged.ttf");}
+@font-face {font-family: "Sniglet"; src: url("Sniglet-ExtraBold.otf");}
+
 @media screen and (max-width: 450px) {
     /*Styling for nav bar and elements within*/
     nav{width: 95%;}
