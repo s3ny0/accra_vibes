@@ -7,7 +7,7 @@
 /*Changes to styling below will affect all elements across device widths*/
 body{
     margin: 0px;
-    background-color: rgb(212, 206, 146);
+    background-color: rgb(206, 206, 169);
     font-family: "Compagnon Light";
     color: rgb(40, 40, 40);
     cursor: url("cursor.png"), auto;
@@ -30,13 +30,13 @@ nav{
 }
 .title{
     font-family: "Karatula";
-    color: rgb(30, 30, 30);
+    color: rgb(53, 44, 35);
 }
 .menu-button{
     border: none;
     background-color: transparent;
     font-family: "Karatula";
-    color: rgb(30, 30, 30);
+    color: rgb(53, 44, 35);
 }
 .menu-button:hover{
     background-color: rgb(30, 30, 30);
@@ -78,7 +78,7 @@ nav{
 }
 .huge-text{
     font-family: "Ceviche";
-    color: rgb(53, 44, 35);
+    color: rgb(153, 75, 30);
 }
 .sub-text{
     width: 100%;
@@ -86,8 +86,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(30, 30, 30);
-    color: white;
+    background-color: rgb(53, 44, 35);
+    color: rgb(197, 174, 71);
     font-family: "Karatula";
 }
 .hero-img{
@@ -131,7 +131,7 @@ nav{
     border-bottom: 1px solid rgb(30, 30, 30);
 }
 .blurb-heading, .history-heading {
-    color: rgb(12, 62, 92);
+    color: rgb(153, 75, 30);
     font-family: "Karatula";
 }
 @media screen and (max-width: 450px) {
@@ -190,7 +190,7 @@ nav{
     font-family: "Karatula";
 }
 .section-card a{
-    color: white;
+    color: rgb(197, 174, 71);
     text-decoration: none;
     cursor: url("right-arrow.png"), auto;
 }
@@ -269,7 +269,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(53, 44, 35);
-    color: white;
+    color: rgb(153, 75, 30);
 }
 .event-board-heading{
     font-family: "Karatula";
@@ -278,12 +278,13 @@ nav{
     background-color: whitesmoke;
     color: rgb(40, 40, 40);
 }
-table{width: 100%; border: none;}
+table{width: 100%; border: none; overflow: hidden;}
 thead{background-color: rgb(40, 40, 40); text-align: left; color: white; border: none;}
 .event{width: 40%;}
 .date, .location, .entry{width: 20%;}
 .data-row:hover{
     background-color: rgb(194, 194, 194);
+    color: rgb(197, 174, 71);
 }
 
 /*Styling for gallery section*/
@@ -294,7 +295,7 @@ thead{background-color: rgb(40, 40, 40); text-align: left; color: white; border:
     border-bottom: 1px solid rgb(30, 30, 30);
 }
 .gallery-heading{
-    color: rgb(12, 62, 92);
+    color: rgb(153, 75, 30);
     font-family: "Karatula";
 }
 .display{
@@ -336,7 +337,7 @@ footer{
     width: 95%;
     margin: 30px auto;
     background-color: rgb(53, 44, 35);
-    color: rgb(212, 206, 146);
+    color: rgb(197, 174, 71);
 }
 .links{
     display: flex;
@@ -348,15 +349,18 @@ footer{
     border: none;
     font-family: "Compagnon Light";
 }
+.links button{
+    background-color: rgb(153, 75, 30);
+}
 .bold-footer{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 30px auto;
-    color: white;
+    color: rgb(153, 75, 30);
     text-align: center;
-    font-family: "Karatula";
+    font-family: "Ceviche";
 }
 @media screen and (max-width: 450px) {
     footer{padding-top: 50px;}
